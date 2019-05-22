@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    include:
+    - "default"
+  security:
+    user:
+      name: "testuser"
+      password: "welcome1"
+
+logging:
+  level:
+    org.springframework: "info"
+    net.playground.productsbackend: "debug"
+
+server:
+  port: 7080
+
+management:
+  endpoint:
+    logfile:
+      external-file: "logs/application.log"
